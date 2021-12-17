@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas de objetos</title>
+    <script>
+        const jon = 
+        {
+            nombre: "Jon",
+            apellidos: "Mircha",
+            edad: 35,
+            pasatiempos: ["Correr", "Sudokus", "Programar"],
+            soltero: false,
+            contacto: {
+                        email: "jonmircha@gmail.com",
+                        twitter: "@jonmircha",
+                        movil: "123456789"
+                        },
+
+            saludo: function () {console.log("Hola!")}
+        }
+
+        function Saludar() 
+        {
+            console.log(`Hola: ${jon.nombre}`);
+            console.log(`pasatiempos: ${jon.pasatiempos}`);
+            console.log(`pasatiempos: ${jon.pasatiempos[1]}`);
+            console.log(`movil: ${jon.contacto.movil}`);
+            jon.saludo;
+        }
+    </script>
+</head>
+
+<body>
+<input type="button" value="Ver (console)" onclick="Saludar();"/>
+<br/><br/>
+<a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects">
+    Referencia
+</a>
+<br><br>
+<a href="https://www.digitalocean.com/community/tutorials/como-usar-metodos-de-objetos-en-javascript-es">Referencia</a>
+
+<br><br>
+<a href="http://w3.unpocodetodo.info/jsblog/crear-objetos-en-javascript.php">Referencia</a>
+
+</body>
+</html>
