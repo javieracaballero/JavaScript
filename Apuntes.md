@@ -352,9 +352,131 @@ i++;  ++i;
 i--;  --i;
 </pre>
 
+_Video 14_
+- - -
+
 ## Lógicos 
 ! -> not
 
 || -> or
 
 && -> and
+
+# Esctructuras de control
+Controla el flujo del código.
+
+## Condicionales
+
+### if _ else
+
+<pre>
+if (condición) {
+  sentencias true
+} else {
+  sentencias false
+}
+</pre>
+
+Cuando en la condición usamos < ó > excluimos el valor. Para incluirlo <= ó >=, en este caso si que alcanza el valor.
+
+### if _ else if ... _ else
+
+<pre>
+if (condición) {
+  sentencias true
+} else if (condición2) {
+  sentencias true condición2
+} else if (condición3) {
+  sentencias true condición3
+} else {
+  sentencias false
+}
+</pre>
+
+### Operador ternario
+<pre>
+(condición)?true:false;
+</pre>
+
+Va únicamente en una sola línea.
+
+### switch _ case
+
+<pre>
+switch (variable) {
+
+  case valor:
+    sentencias;
+    break;
+
+  case valor:
+    sentencias;
+    break;
+
+  [...]
+
+  default:
+    sentencias si no cumple ninguna;
+    break
+}
+</pre>
+
+_video 15_
+# Bucles
+
+## while
+Mientras...
+<pre>
+while (condición) {
+  sentencias;
+}
+</pre>
+
+El bucle se cumple mientras la condición sea true.
+
+## do
+<pre>
+do {
+  sentencias;
+} while (condición)
+</pre>
+
+Realiza la operación por lo menos una vez.
+
+## for
+<pre>
+for (inciailización variable;
+     condición;
+     incrementeo/decremento) {
+  sentencias;
+}
+</pre>
+
+## for ( in )
+Presenta las propiedades de un objeto.
+<pre>
+for (cont key in object) {
+  sentencias;
+}
+</pre>
+
+<u>Ejemplo:</u>
+<pre>
+const jon = {
+  nombre: "Jon";
+  apellido: "Mircha";
+  edad: 34
+}
+
+for (const propiedad in jon) {
+  console.log(propiedad);
+}
+</pre>
+
+Si queremos ver también los valores del objeto...
+
+<pre>
+for (const propiedad in jon) {
+  console.log(`Key:${propiedad}, Value: ${jon[propiedad]}`);
+}
+</pre>

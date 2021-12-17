@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 15. Ejemplo de for (in)</title>
+</head>
+<body>
+    <script>
+        const jon = {
+            nombre: "Jon",
+            apellido: "Mircha",
+            edad: 15
+        }
+
+        console.log("SALIDA ATRIBUTO UNICAMENTE.");
+
+        for (const propiedad in jon) {
+            console.log(propiedad);
+        }
+
+        console.log("");
+        console.log("SALIDA DE ATRIBUTO Y VALOR.");
+
+        for (const atributo in jon) {
+            console.log(`  Key: ${atributo}, Value: ${jon.atributo}`);
+        }
+
+        console.log("No funciona con el punto.")
+
+        console.log("");
+        for (const atributo in jon) {
+            console.log(`  Key: ${atributo}, Value: ${jon[atributo]}`);
+        }
+
+
+        const cars = ["BMW", "Volvo", "Mini"];
+
+        let text = "";
+        for (let x of cars) {
+        // text += x;
+            console.log(x);
+        }
+
+        let iterable = [10, 20, 30];
+
+        for (let value of iterable) {
+        value += 1;
+        console.log(value);
+        }
+
+        let palabro = "Escamoteable";
+        let texto = "";
+        for (let x of palabro){
+            texto += x;
+            console.log(texto);
+        }
+
+    </script>
+
+    <h2> Los resultados del código salen por la consola.</h2>
+</body>
+</html>
